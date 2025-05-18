@@ -76,3 +76,4 @@ vim.o.confirm = true
 
 -- Added by me
 vim.g.have_nerd_font = true
+
