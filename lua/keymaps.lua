@@ -52,3 +52,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- vim: ts=2 sts=2 sw=2 et
+
+-- From Jocke
+-- Write buffer with less annoying commands
+vim.keymap.set('n', '<leader>ww', vim.cmd.w, { noremap = true, silent = true, desc = 'Save Current Buffer' })
+vim.keymap.set('n', '<leader>wa', vim.cmd.wa, { noremap = true, silent = true, desc = 'Save All Buffers' })
+vim.keymap.set('n', '<leader>wq', vim.cmd.wq, { noremap = true, silent = true, desc = 'Save and Close Current Buffer' })
